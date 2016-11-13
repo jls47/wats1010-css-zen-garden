@@ -1,7 +1,7 @@
 /* css Zen Garden default style v1.02 */
 /* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
 
-/* This file based on 'Tranquille' by Dave Shea */
+/* This file is new!  By John Luke Schaefer. */
 /* You may use this file as a foundation for any new work, but you may find it easier to start from scratch. */
 /* Not all elements are defined in this file, so you'll most likely want to refer to the xhtml as well. */
 
@@ -12,183 +12,231 @@
 html {
 	margin: 0;
 	padding: 0;
-	}
+	
+}
+
 body { 
-	font: 75% georgia, sans-serif;
+	font: 75% arial;
 	line-height: 1.88889;
 	color: #555753; 
 	background: #fff url(blossoms.jpg) no-repeat bottom right; 
 	margin: 0; 
 	padding: 0;
-	}
-p { 
-	margin-top: 0; 
-	text-align: justify;
-	}
-h3 { 
-	font: italic normal 1.4em georgia, sans-serif;
-	letter-spacing: 1px; 
-	margin-bottom: 0; 
-	color: #7D775C;
-	}
-a:link { 
-	font-weight: bold; 
-	text-decoration: none; 
-	color: #B7A5DF;
-	}
-a:visited { 
-	font-weight: bold; 
-	text-decoration: none; 
-	color: #D4CDDC;
-	}
-a:hover, a:focus, a:active { 
-	text-decoration: underline; 
-	color: #9685BA;
-	}
-abbr {
-	border-bottom: none;
-	}
-
-
-/* specific divs */
-.page-wrapper { 
-	background: url(zen-bg.jpg) no-repeat top left; 
-	padding: 0 175px 0 110px;  
-	margin: 0; 
-	position: relative;
-	}
-
-.intro { 
-	min-width: 470px;
-	width: 100%;
-	}
-
-header h1 { 
-	background: transparent url(h1.gif) no-repeat top left;
-	margin-top: 10px;
-	display: block;
-	width: 219px;
-	height: 87px;
-	float: left;
-
-	text-indent: 100%;
-	white-space: nowrap;
-	overflow: hidden;
-	}
-header h2 { 
-	background: transparent url(h2.gif) no-repeat top left; 
-	margin-top: 58px; 
-	margin-bottom: 40px; 
-	width: 200px; 
-	height: 18px; 
-	float: right;
-
-	text-indent: 100%;
-	white-space: nowrap;
-	overflow: hidden;
-	}
-header {
-	padding-top: 20px;
-	height: 87px;
+	background: rgba(195, 173, 132, 1);
+	
+}
+body a{
+	text-decoration: none;
+	color: green;
 }
 
-.summary {
-	clear: both; 
-	margin: 20px 20px 20px 10px; 
-	width: 160px; 
-	float: left;
-	}
-.summary p {
-	font: italic 1.1em/2.2 georgia; 
+.intro{
+	background: rgba(128, 186, 22, 0.1);
+	background-image: url("http://i.imgur.com/J4eJj6n.jpg")
+	
+}
+
+.intro h1{
+	margin-left: 2%;
+	width: 400px;
+/*	color: rgba(135, 234, 85, 1); */
+	color: magenta;
+	font-size: 3.0em;
+	letter-spacing: 5px;
+}
+
+.intro h2{
+	margin-left: 4%;
+	margin-bottom: 50px;
+	color: rgba(110, 227, 135, 1);
+	letter-spacing: 3px;
+	
+}
+
+.summary{
+	margin-left: 800px;
+	width: 700px;
+	padding-left: 20px;
+	background: rgba(131, 143, 167, 0.7);
+	color: rgba(254, 240, 188, 1);
+	letter-spacing: 1px;
+}
+
+.summary a{
+	text-decoration: none;
+	font-family: georgia;
+	letter-spacing: 1px;
+	background: rgba(146, 130, 123, 0.3);
+	color: darkgreen;
+}
+
+.summary a:nth-child(1):hover{
+	color: green;
+	font-weight: bold;
+}
+
+.summary a:nth-child(2):hover{
+	color: green;
+	font-weight: bold;
+}
+
+.sidebar{
+	margin-left: 00px;
+	position: absolute;
+	top: 502px;
+	right: 0px;
+	width: 305px;
+	line-height: 22px;
+	background: rgba(131, 143, 166, 0.7);
+	color: #555753; 
+	padding-left: 5px;
+	height: 507px;
+	letter-spacing: 1px;
+}
+
+.sidebar li{
+	list-style: none;
+	
+	margin-left: -30px;
+}
+
+
+.sidebar a:link{
+	text-decoration: none;
+	font-family: verdana;
+	color: lightgreen;
+}
+
+.sidebar a:hover{
+	font-weight: bold;
+	
+}
+
+.design-selection{
+	color: #555753; 
+	transition: background-color 0.5s ease;
+}
+
+.design-selection:hover{
+	background: rgba(14, 146, 0, 0.5);
+	
+}
+
+.design-archives{
+	transition: background-color 0.5s ease;
+	
+}
+
+.design-archives:hover{
+	background: rgba(48, 203, 1, 0.5);
+}
+
+.zen-resources{
+	transition: background-color 0.5s ease;
+	
+}
+
+.zen-resources:hover{
+	background: rgba(14, 146, 0, 0.5);
+}
+
+.preamble{
+	width: 1100px;
+	text-align: left;
+	margin-left: 50px;
+	color: rgba(163, 251, 165, 1);
+	padding-bottom: 2px;
+	font-weight: bold;
+	font-size: 1.1em;
+}
+
+.preamble p::first-letter{
+	font-size: 1.2em;
+	color: rgba(181, 241, 181, 1);
+	
+}
+
+.explanation{
+	margin-left: -20px;
+	font-size: 1.2em;
+	font-family: verdana;
+}
+
+.participation{
+	margin-left: -20px;
+	font-size: 1.2em;
+	font-family: verdana;
+}
+
+.benefits{
+	margin-left: -20px;
+	font-size: 1.2em;
+	font-family: verdana;
+}
+
+.requirements{
+	margin-left: -20px;
+	font-size: 1.2em;
+	font-family: verdana;
+}
+
+
+.main-supporting div:nth-child(odd){
+	background-image: url("http://i.imgur.com/EzAww9i.jpg");
+	padding-bottom: 5px;
+	padding-left: 5px;
+	background: rgba(205, 186, 84, .3);
+	border: 5px solid rgba(145, 125, 72, 0.5);
+	border-radius: 5px;
+}
+
+.main-supporting div:nth-child(even){
+	background-image: url("http://i.imgur.com/mOWQ0Qu.jpg");
+	background-position: bottom;
+	padding-bottom: 10px;
+	padding-left: 5px;
+	background: rgba(145, 130, 124, 0.1);
+	border: 5px solid rgba(144, 125, 72, 1);
+	border-radius: 2px;
+}
+
+#zen-supporting{
+	margin-left: 20px;
+	color: rgba(11, 44, 11, 1);
+}
+
+.explanation{
+	width: 1500px;
+}
+
+.participation{
+	width: 1500px;
+}
+
+
+footer{
+	width: 800px;
+	margin-left: 450px;
 	text-align: center;
-	}
+	word-spacing: 100px;
+	background: rgba(171, 234, 168, 0.5);
+	transition: width 0.5s;
+}
 
-.preamble {
-	clear: right; 
-	padding: 0px 10px 0 10px;
-	}
-.supporting {	
-	padding-left: 10px; 
-	margin-bottom: 40px;
-	}
+footer a:link{
+	background: lightgreen;
+	border: 3px solid rgba(163, 251, 165, 0.7);
+	font-family: verdana;
+}
 
-footer { 
-	text-align: center; 
-	}
-footer a:link, footer a:visited { 
-	margin-right: 20px; 
-	}
+footer a:hover{
+	font-weight: bold;
+	
+	
+}
 
-.sidebar {
-	margin-left: 600px; 
-	position: absolute; 
-	top: 0; 
-	right: 0;
-	}
-.sidebar .wrapper { 
-	font: 10px verdana, sans-serif; 
-	background: transparent url(paper-bg.jpg) top left repeat-y; 
-	padding: 10px; 
-	margin-top: 150px; 
-	width: 130px; 
-	}
-.sidebar h3.select { 
-	background: transparent url(h3.gif) no-repeat top left; 
-	margin: 10px 0 5px 0; 
-	width: 97px; 
-	height: 16px; 
-
-	text-indent: 100%;
-	white-space: nowrap;
-	overflow: hidden;
-	}
-.sidebar h3.archives { 
-	background: transparent url(h5.gif) no-repeat top left; 
-	margin: 25px 0 5px 0; 
-	width:57px; 
-	height: 14px; 
-
-	text-indent: 100%;
-	white-space: nowrap;
-	overflow: hidden;
-	}
-.sidebar h3.resources { 
-	background: transparent url(h6.gif) no-repeat top left; 
-	margin: 25px 0 5px 0; 
-	width:63px; 
-	height: 10px; 
-
-	text-indent: 100%;
-	white-space: nowrap;
-	overflow: hidden;
-	}
-
-
-.sidebar ul {
-	margin: 0;
-	padding: 0;
-	}
-.sidebar li {
-	line-height: 1.3em; 
-	background: transparent url(cr1.gif) no-repeat top center; 
-	display: block; 
-	padding-top: 5px; 
-	margin-bottom: 5px;
-	list-style-type: none;
-	}
-.sidebar li a:link {
-	color: #988F5E;
-	}
-.sidebar li a:visited {
-	color: #B3AE94;
-	}
-
-
-.extra1 {
-	background: transparent url(cr2.gif) top left no-repeat; 
-	position: absolute; 
-	top: 40px; 
-	right: 0; 
-	width: 148px; 
-	height: 110px;
-	}
+footer:hover{
+	width: 1824px;
+	margin-left: -20px;
+	
+}
