@@ -216,7 +216,7 @@ body a{
 
 footer{
 	width: 800px;
-	margin-left: 450px;
+	margin-left: -20px;
 	text-align: center;
 	word-spacing: 100px;
 	background: rgba(171, 234, 168, 0.5);
