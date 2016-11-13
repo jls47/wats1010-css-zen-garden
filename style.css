@@ -224,14 +224,13 @@ footer{
 }
 
 footer a:link{
-	background: lightgreen;
-	border: 3px solid rgba(163, 251, 165, 0.7);
+	letter-spacing: 2px;
 	font-family: verdana;
 }
 
 footer a:hover{
 	font-weight: bold;
-	
+	letter-spacing: 5px;
 	
 }
 
