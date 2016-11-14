@@ -55,7 +55,9 @@ body a{
 
 .summary{
 	margin-left: 800px;
+/*      margin-left: 60%;  */
 	width: 700px;
+  /*      width: 30%; */
 	padding-left: 20px;
 	background: rgba(131, 143, 167, 0.7);
 	color: rgba(254, 240, 188, 1);
@@ -92,6 +94,7 @@ body a{
 	padding-left: 5px;
 	height: 507px;
 	letter-spacing: 1px;
+   /*   width: 30%.  */
 }
 
 .sidebar li{
@@ -200,6 +203,14 @@ body a{
 	border-radius: 2px;
 }
 
+.main-supporting div:nth-child(1){
+     /* width: 70%;  */
+}
+
+.main-supporting div:nth-child(2){
+     /* width: 70%;  */
+}
+
 #zen-supporting{
 	margin-left: 20px;
 	color: rgba(11, 44, 11, 1);
@@ -216,6 +227,7 @@ body a{
 
 footer{
 	width: 800px;
+/*      width: 55%;    */
 	margin-left: -20px;
 	text-align: center;
 	word-spacing: 100px;
@@ -237,5 +249,5 @@ footer a:hover{
 footer:hover{
 	width: 1824px;
 	margin-left: -20px;
-	
+   /*   width: 100%;   */
 }
